@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="ypover" id="2">
+        <sql>
+            insert into old_tinder (person_name, sex, description,chat_id)
+            values ('Мефодий', 'Сударь', 'Плотник, 30 лет. Отличный молодой человек. Ищу прекрасную сударыню','1'),
+            ('Кирилл', 'Сударь','Офицер, 27 лет. Отличный молодой человек. Ищу прекрасную сударыню','2'),
+            ('Алёна', 'Сударыня', 'Домохозяйка, 28 лет. Спортсменка и просто красавица.','3'),
+            ('Василиса', 'Сударыня', 'Кассир, 25 лет. Умница и просто красавица.','4');
+        </sql>
+    </changeSet>
+</databaseChangeLog>
